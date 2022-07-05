@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML PROJECT</title>
+    <style>
+      .ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #96ceb4;
+      }
+
+      .inline {
+        float: left;
+      }
+
+      .inline a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .inline a:hover {
+        background-color: #588c7e;
+      }
+
+      footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #96ceb4;
+        color: white;
+      }
+
+      .main {
+        border: 3px outset white;
+        background-color: whitesmoke;
+        text-align: center;
+      }
+
+      section {
+        border: 3px outset white;
+        background-color: whitesmoke;
+        text-align: center;
+      }
+
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        width: 450px;
+        height: 300px;
+      }
+      th {
+        border: 1px solid black;
+      }
+      td {
+        border: 1px solid black;
+      }
+
+      #image {
+        text-align: right;
+      }
+
+      #footer{
+      background: black;
+      color:white;
+      text-align: center;
+      } 
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul class="ul">
+        <li class="inline"><a class="active" href="#webintro">Web Intro</a></li>
+        <li class="inline"><a href="#webvsinternet">Web VS Internet</a></li>
+        <li class="inline"><a href="#webarchitecture">Web architecture</a></li>
+        <li class="inline"><a href="#protocol">Protocols</a></li>
+        <li class="inline"><a href="#servers">Servers and API</a></li>
+        <li class="inline"><a href="#bd">Databases</a></li>
+        <li class="inline"><a href="#Webdev">Web development</a></li>
+        <li class="inline"><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <h2><a name="webintro">Web Intro</a></h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/wfOQRH6Sd4s"
+          title="YouTube video player"
+          frameborder="2"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <br /><br />
+        <div id="image">
+          <img src="developer.JPG" alt="developer" />
+        </div>
+      </section>
+      <section>
+        <h2><a name="webvsinternet">Web VS Internet</a></h2>
+        <table class="center">
+          <tr>
+            <th>Internet</th>
+            <th>Web</th>
+          </tr>
+          <tr>
+            <td>Global network of interconnected devices.</td>
+            <td>Consist only of linked hypertext documents.</td>
+          </tr>
+          <tr>
+            <td>Network of networks</td>
+            <td>Network of web pages</td>
+          </tr>
+        </table>
+        <br />
+      </section>
+      <section>
+        <h2><a name="webarchitecture">Web architecture</a></h2>
+        <img src="scheme.JPG" alt="web architecture" />
+      </section>
+      <section>
+        <h2><a name="protocol">Protocols</a></h2>
+        <article>
+          <p>
+            Network protocols are a set of rules, conventions, and data
+            structures that dictate how devices exchange data across networks.
+            Network protocols control all aspects of network communication from
+            sending and receiving messages, to formatting files for different
+            types of messages. Similar to the way that speaking the same
+            language simplifies communication between two people, network
+            protocols make it possible for devices to interact with each other
+            because of predetermined rules built into devices’ software and
+            hardware.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2><a name="servers">Servers and API</a></h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h-zw6Q9yf4U" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/><br/>
+      </section>
+      <section>
+        <h2><a name="bd">Databases</a></h2>
+        <p>
+          There are many different types of databases. The best database for a
+          specific organization depends on the organization’s purposes, plans,
+          and projects. These are the database types:
+          <ul type="none">
+            <li>Relational databases</li>
+            <li>Object-oriented databases</li>
+            <li>Distributed databases</li>
+            <li>Data warehouses</li>
+            <li>NoSQL databases</li>
+            <li>Graph databases</li>
+            <li>OLTP databases</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h2><a name="webdev">Web development</a></h2>
+        <article>
+Web development is the process of building websites and applications for the Internet or for a private network known as an Intranet.
+
+Web development is not only concerned with the design of a website. It’s also about the coding and programming that powers the website’s functionality.
+
+From the simplest, most static web pages to social media platforms and applications and from E-commerce websites to content management systems (CMS), all the tools we use daily via the Internet have been built by web developers.
+          <br/><br/>
+
+        </article>
+      </section>
+      
+        
+        <section id="caontact">
+          <h2><a name="contact">Contact</a></h2>
+          <form action="">
+            <label>Name</label>
+            <input type="text" required placeholder="type your name" /><br />
+            <label>firstname </label>
+            <input type="text" required placeholder="type your firstname" /><br>
+            <label>email</label>
+            <input type="email" placeholder="**@**.com" required /><br>
+            <textarea
+              name="request"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="type your request"
+            ></textarea><br>
+            <input type="submit" value="confirm" />
+            <input type="reset" value="cancel" />
+          </form>
+          <br/><br/>
+        </section>
+        <section>
+          <audio controls>
+            <source src="tom-and-jerry.mp3" type="audio/mp3">
+          </audio>
+          <br/><br/>
+          <img src="theend.JPG" alt="end">
+          <br/><br/>
+        </section>
+    </main>
+    <footer>
+      <div id="footer">
+        created by WebTeam | @ 2022 All rights reserved
+    </div>
+    </footer>
+  </body>
+</html>
